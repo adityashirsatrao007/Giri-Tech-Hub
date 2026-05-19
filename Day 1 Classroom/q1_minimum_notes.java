@@ -1,6 +1,6 @@
 import java.util.*;
 
-class minimum_notes {
+class q1_minimum_notes {
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);

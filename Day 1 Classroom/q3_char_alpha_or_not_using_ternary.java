@@ -1,6 +1,6 @@
 import java.util.*;
 
-class char_alpha_or_not_using_ternary{
+class q3_char_alpha_or_not_using_ternary{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a character");
