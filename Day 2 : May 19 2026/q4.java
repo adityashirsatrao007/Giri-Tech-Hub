@@ -1,0 +1,22 @@
+// Q4. Write a java program to check whether number is neon or not.Input : 9 Output : Neon Number Explanation: square is 9*9 = 81 and sum of the digits of the square is 9.
+import java.util.*;
+class q4{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=sc.nextInt();
+
+
+        int square=n*n;
+        int sum=0;
+        while(square>0){
+            sum+=square%10;
+            square/=10;
+        }
+        if(sum==n){
+            System.out.println("Neon Number");
+        }else{
+            System.out.println("Not a Neon Number");
+        }
+    }
+}

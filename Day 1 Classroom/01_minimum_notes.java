@@ -1,0 +1,33 @@
+import java.util.*;
+
+class minimum_notes {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter amount:");
+        int amount = sc.nextInt();
+
+        int originalAmount = amount;
+
+        int[] notes = {500, 200, 100, 50, 20, 10, 5};
+
+        int totalNotes = 0;
+
+        for (int i = 0; i < notes.length; i++) {
+
+            int count = amount / notes[i];
+
+            if (count != 0) {
+                System.out.println(notes[i] + " x " + count);
+
+                totalNotes += count;
+
+                amount = amount % notes[i];
+            }
+        }
+
+        System.out.println("Minimum notes needed: " + totalNotes);
+        System.out.println("Remaining amount: " + amount);
+    }
+}
